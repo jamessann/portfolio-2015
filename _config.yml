@@ -21,7 +21,7 @@ url:              http://www.jamessann.com/portfolio-2015
 
 baseurl:          "/portfolio-2015/"
 paginate:         6
-paginate_path:    "journal/page/:num"
+paginate_path:    "portfolio-2015/journal/page/:num"
 
 # Build settings
 markdown:         kramdown
