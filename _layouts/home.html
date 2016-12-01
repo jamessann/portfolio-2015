@@ -33,12 +33,12 @@
 
           <nav class="primary-nav col col-9" role="navigation">
             <ul class="list-inline">
-              <li><a href="/case-studies/" class="{% if page.url contains "/case-studies/" %}active{% endif %}">Case Studies</a></li>
-              <li><a href="/journal/" class="{% if page.url contains "/journal/" %}active{% endif %}">Journal</a></li>
-              <li><a href="/about/" class="{% if page.url contains "/about/" %}active{% endif %}">About</a></li>
+              <li><a href="{{ site.baseurl }}/case-studies/" class="{% if page.url contains "/case-studies/" %}active{% endif %}">Case Studies</a></li>
+              <li><a href="{{ site.baseurl }}/journal/" class="{% if page.url contains "/journal/" %}active{% endif %}">Journal</a></li>
+              <li><a href="{{ site.baseurl }}/about/" class="{% if page.url contains "/about/" %}active{% endif %}">About</a></li>
             </ul>
           </nav>
-            
+
           <!-- Mobile Fullscreen Menu -->
           <a class="primary-nav-trigger" href="#0">
             <span class="menu-text">Menu</span>
@@ -71,7 +71,7 @@
                       ltr = coded.charAt(i)
                       link += (ltr)
                     }
-                    else {     
+                    else {
                       ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
                       link += (key.charAt(ltr))
                     }
@@ -112,11 +112,11 @@
         {{ content }}
       </div>
 
-      {% include footer.html %} 
+      {% include footer.html %}
 
   <!-- Google Analytics -->
   {% include analytics.html %}
-  
+
   <script src="{{ site.baseurl }}assets/js/salvattore.min.js"></script>
   <script src="{{ site.baseurl }}assets/js/wow.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
