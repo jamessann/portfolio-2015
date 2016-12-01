@@ -19,7 +19,7 @@ tagline:          'The portfolio of Melbourne multidisciplinary UI / UX designer
 description:      'The portfolio of Melbourne multidisciplinary UI / UX designer James Sann'
 url:              http://www.jamessann.com/portfolio-2015
 
-baseurl:          "/portfolio-2015/"
+baseurl:          "/"
 paginate:         6
 paginate_path:    "journal/page/:num"
 
