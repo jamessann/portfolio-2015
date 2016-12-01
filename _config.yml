@@ -19,12 +19,12 @@ tagline:          'The portfolio of Melbourne multidisciplinary UI / UX designer
 description:      'The portfolio of Melbourne multidisciplinary UI / UX designer James Sann'
 url:              http://www.jamessann.com/portfolio-2015
 
-baseurl:          "/"
+baseurl:          "/portfolio-2015/"
 paginate:         6
 paginate_path:    "journal/page/:num"
 
 #production_url : http://jamessann.github.io/portfolio-2015
-BASE_PATH : http://jamessann.com/portfolio-2015
+#BASE_PATH : http://jamessann.com/portfolio-2015
 
 # Build settings
 markdown:         kramdown
