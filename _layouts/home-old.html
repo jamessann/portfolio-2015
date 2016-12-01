@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+
+  {% include head.html %}
+
+  <body class="layout-reverse">
+
+   <!--  {% include sidebar.html %} -->
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead col col-12">
+        <div class="container">
+          <div class="logo col col-3">
+            <a href="/" title="Home">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                <path class="js-mark" d="M37.703,29.259l-0.065-0.079c-0.02-0.043-0.044-0.097-0.087-0.146l-2.068-2.336l-2.534-2.914V10.834
+                  c0-0.319-0.26-0.578-0.579-0.578h-14.36c-0.318,0-0.578,0.259-0.578,0.578v7.199c0,0.319,0.26,0.579,0.578,0.579l6.404-0.003
+                  c0.066,0.014,0.122,0.041,0.173,0.085c0.028,0.021,0.055,0.051,0.087,0.102l5.306,6.098l-0.002,3.404
+                  c-0.451,2.377-2.514,4.103-4.906,4.103c-2.217,0-4.191-1.508-4.803-3.666l-0.01-0.024c-0.043-0.278-0.286-0.491-0.572-0.491h-1.813
+                  c-0.319,0-0.579,0.26-0.579,0.578l0.002,0.136c0.256,1.288,0.832,2.507,1.667,3.525c1.517,1.852,3.743,2.913,6.108,2.913
+                  c3.974,0,7.34-2.983,7.865-6.952h0.013v-0.11l1.589,1.827c-1.115,4.33-5.006,7.349-9.479,7.349c-5.398,0-9.791-4.393-9.789-9.818
+                  l0.001-0.036l-0.003-0.1l-0.001-0.981c0.022-0.193,0.186-0.34,0.378-0.341h7.495c0.208,0.001,0.381,0.172,0.384,0.379v2.671
+                  c0,0.318,0.259,0.578,0.578,0.578h1.813c0.319,0,0.578-0.26,0.578-0.578l0.001-5.441c0-0.319-0.26-0.579-0.579-0.579H12.875
+                  c-0.319,0-0.579,0.26-0.579,0.579v4.05l0.004,0.096h0.002c0.059,2.831,1.023,5.492,2.793,7.702c2.439,3.045,6.07,4.791,9.963,4.791
+                  c6.315,0,11.745-4.713,12.632-10.984l0.004-0.035c0.002-0.052-0.006-0.106-0.021-0.162L37.703,29.259z M29.979,20.369l-3.988-4.583
+                  l-0.037-0.031h-0.004c-0.025-0.019-0.05-0.033-0.075-0.047c-0.084-0.043-0.168-0.064-0.261-0.068h-4.839
+                  c-0.208-0.006-0.372-0.174-0.374-0.381v-1.646c0-0.213,0.174-0.386,0.386-0.386h8.806c0.213,0,0.387,0.173,0.387,0.386V20.369z"/>
+                <path class="js-circle" d="M25,50C11.215,50,0,38.785,0,25S11.215,0,25,0s25,11.215,25,25S38.785,50,25,50z M25,2.721
+                  C12.715,2.721,2.721,12.715,2.721,25S12.715,47.279,25,47.279c12.285,0,22.279-9.994,22.279-22.279S37.285,2.721,25,2.721z"/>
+              </svg>
+              <h1>James Sann</h1>
+              <span>UI / UX Designer</span>
+            </a>
+          </div>
+          <div class="main-menu col col-9">
+          <ul class="list-inline">
+            <li><a href="/case-studies/" class="{% if page.url contains "/case-studies/" %}active{% endif %}">Case Studies</a></li>
+            <li><a href="/journal/" class="{% if page.url contains "/journal/" %}active{% endif %}">Journal</a></li>
+            <li><a href="/about/" class="{% if page.url contains "/about/" %}active{% endif %}">About</a></li>
+            <!--
+          {% assign pages_list = site.pages %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+             {% if node.menu == 'main' %}
+              {% if node.layout == "page" %}
+                <li><a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
+              {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        -->
+
+          <!-- {% assign pages = site.pages | sort: 'weight' %} 
+          {% for p in pages %}
+            {% if p.menu == 'main' %}
+              <li{% if p.url == page.url %} class="active"{% endif %}>
+                 <a href="{{ site.baseurl }}/{{ p.url }}">{{ p.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %} -->
+          </ul>
+        </div>
+        </div> <!-- Close container -->
+      </div> <!-- Close Masthead -->
+
+      <div class="container content">
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+    </div> <!-- Close Wrap  -->
+   
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to your website's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+  
+
+  <script src="{{ site.baseurl }}assets/js/salvattore.min.js"></script>
+  <script src="{{ site.baseurl }}assets/js/wow.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ site.baseurl }}assets/js/jquery.1.11.2.min.js"><\/script>')</script>
+  <!-- Let's handle those responsive images for the time being -->
+  <script src="{{ site.baseurl }}assets/js/picturefill.min.js"></script>
+  <script src="{{ site.baseurl }}assets/js/default.js"></script>
+  </body>
+</html>

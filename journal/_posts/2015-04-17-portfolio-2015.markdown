@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Portfolio 2015 — New Beginnings, New Adventures"
+date: 2015-04-17 14:00
+comments: false
+categories: [Design]
+description: "Portfolio 2015 - The build"
+keywords: "Portfolio 2015, Jekyll, SCSS, Picturefill, adaptive"  
+---
+
+<p class="extra-large">
+<img
+  src="{{ site.baseurl }}assets/img/journal/portfolio-2015-1170px.jpg"
+  srcset="{{ site.baseurl }}assets/img/journal/portfolio-2015-1170px.jpg 2000w,
+          {{ site.baseurl }}assets/img/journal/portfolio-2015-640px.jpg 640w,
+          {{ site.baseurl }}assets/img/journal/portfolio-2015-320px.jpg 320w"
+  alt="Portfolio 2015">
+</img>
+</p>
+
+Welcome to my portfolio for 2015. I hope you like what you see. I thought I'd take a moment to highlight some of the thoughts, methods, and implementations that went into my portfolio.
+
+<hr>
+
+## Planning
+
+Ask any digital creative who puts together an online portfolio and chances are they struggle. So many concepts, variations, and implementations and they're still not satisfied. That said, you have to set yourself limits and timelines so that's exactly what I did. I promised myself a short period of time to get it done and that's exactly what I accomplished. 
+
+The other challenge of the portfolio is selecting the examples of work to be included. Obviously your best work should be featured but sometimes even that's difficult to gauge. Visual design is only one aspect of the design process. At the end of the day, it's all about how you solve the particular design problem at hand and so I decided to include case studies rather than just finished artwork. It required a greater amount of preparation but my role at Snowball was so much more than final art and I wanted that to come across through the case studies. Then there is work that never made it to launch (due to agency negotiations and factors outside of my control) but I wanted to share. Those are equally substantial.
+
+Finally — side projects. Side projects are a great way to bring passion projects into your portfolio and I included [an example] ({{ site.baseurl }}case-studies/royal-mail-on-spencer/). However side projects are not always feasible when working full-time with additional responsibilities. Plus they are not always subject to real-world constraints. But they are important and I hope to do more in 2015.
+
+<hr>
+
+## Build
+
+Once I had an idea of the case studies I wanted to feature and the stories I wanted to tell, the next step was deciding which platform I would use to showcase my work. Being a former front-end developer by trade, I was comfortable building the site from scratch. And there's no better system than [Jekyll](http://jekyllrb.com/). I looked at using Squarespace or Wordpress but the former whilst easy to use, didn't give me the flexibility I needed and the latter, felt like overkill (plus I hate the maintenance). Jekyll is lightweight, fully customisable, with no database and fast. I realise at the end of the day any platform is fine but I guess it's the obsessive control over the code that I love about Jekyll. No unnecessary bloat.
+
+Here are a few things I incorporated into this years portfolio build so far:
+
+* I got more organised in 2014 with my SCSS. [Bourbon](http://bourbon.io/) provided some handy mixins and I developed a few of my own.
+* Responsive images. I used the [Picturefill](http://scottjehl.github.io/picturefill/) polyfill for the time being. There's no need serving up large images on mobile.
+* Inline SVG. Many of the SVGs used on the site are inline to give me greater control, reduce the number of HTTP requests, and look sharp on all devices. I looked into animating them further with [SnapSVG](http://snapsvg.io/) but time escaped me.
+* CSS Animation. I sprinkled a little here and there (all CSS3, none JavaScript) but very minimally. Animation is a huge discussion point and with [Google's Material Design](http://www.google.com/design/spec/material-design/introduction.html) rolling out more and more, their use of 'meaningful transitions' and 'responsive interactions' are well considered. But with great power, comes great responsibility so I kept things low-key.
+
+On my to-do list is incorporating [Grunt](http://gruntjs.com/) into my workflow. The more automation I have, the more time I have to invest in other areas.
+
+<hr>
+
+## Typography
+
+[LL Circular](http://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/) by Lineto was my first typeface choice. But at over AU$300 for a single weight, it broke my budget pretty quick. So as a fallback I went with [Soleil](https://typekit.com/fonts/soleil) from TypeTogether. It's a strong geometric typeface which means 'Sun' in French, has many weights to choose from, and isn't as overly prevalent as Futura.
+
+<hr>
+
+## Reflection
+
+Like any portfolio, blood, sweat and many tears went into it. I'm proud to showcase the projects I worked on although my best work is ahead of me, so please [explore my work]({{ site.baseurl }}case-studies/) and [get in touch]({{ site.baseurl }}about/) so I can be part of it. Thanks for reading.
+
+
+
+

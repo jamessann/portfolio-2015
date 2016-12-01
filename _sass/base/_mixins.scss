@@ -1,0 +1,51 @@
+// ==========================================================================
+// Base – Mixins
+// ==========================================================================
+
+// Font Sizes (REMs with PX fallback for older browsers)
+@mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 16) + rem;
+}
+
+// Line Height Sizes (REMs with PX fallback for older browsers)
+@mixin line-height($size) {
+    line-height: $size + px;
+    line-height: ($size / 16) + rem;
+}
+
+// Rounded Corners
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Absolute Center
+@mixin center($width, $height) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: $height;
+    width: $width;
+    margin-left: - $width / 2;
+    margin-top: - $height / 2;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Delicious font smoothing
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}

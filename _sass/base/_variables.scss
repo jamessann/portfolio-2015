@@ -1,0 +1,35 @@
+// ==========================================================================
+// Base – Global Variables
+// ==========================================================================
+
+// Container Defaults
+$mobile-container:   100%;
+$tablet-container:   720px;
+$desktop-container:  73.13 + rem; /* 1170px (16px x 73.13) */
+
+
+// Resonsive Design Break Points
+$tablet-breakpoint:  ($tablet-container);
+$desktop-breakpoint: ($desktop-container);
+
+// Default Fonts
+$default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$default-code-font-family: Menlo, Monaco, "Courier New", monospace, serif;
+
+// Font Size Defaults
+$h1: 36;
+$h2: 32;
+$h3: 26;
+$h4: 20;
+$h5: 18;
+$h6: 16;
+
+$default-font-size: 16;
+$default-line-height: 16;
+
+// Default Colours
+$default-font-color:          #526472; /* Metallic Blue */
+$default-paragraph-color:     #677E90; /* Metallic Blue - Lighter */
+$default-link-color:          #526472; /* Metallic Blue */
+$default-button-color:        #F16363; /* Cinnabar Red */
+$default-button-hover-color:  #E9524A; /* Cinnabar Red */

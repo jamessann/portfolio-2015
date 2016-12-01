@@ -1,0 +1,89 @@
+---
+layout: post
+title: "Top 5 Films of 2013"
+date: 2014-01-20 14:40
+comments: true
+description: "Top 5 Films of 2013"
+keywords: "Before Midnight, Gravity, Frances Ha, Django Unchained, The Spectacular Now"
+excerpt: The following are based on Australian release dates. I also didn't get around to all films released in 2013.
+---
+
+<h2 class="text-center">Preface</h2>
+
+The following are based on Australian release dates. I also didn't get around to all films released in 2013.
+
+<!-- more -->
+
+<hr>
+
+<p class="extra-large">
+<img src="{{ site.baseurl }}assets/img/journal/top-5-2013-film-before-midnight.jpg" alt="Before Midnight">
+</p>
+
+###1. Before Midnight
+
+Having followed Jesse and Celine throughout the years has been such a voyeuristic cinematic experience since every one of the *Before* films has been so believable. I was skeptical of a third film after the note perfect ending to *Before Sunset* but that apprehension was completely removed by the end of *Before Midnight*. It’s perhaps the best film of the series(?) yet but it’s also the most ‘realistic’ and challenging. No film hit harder in 2013.
+
+<hr>
+
+<p class="extra-large"><img src="{{ site.baseurl }}assets/img/journal/top-5-2013-film-gravity.jpg" alt="Gravity"></p>
+
+###2. Gravity
+
+Visually audacious and breathtakingly crafted piece of visceral filmmaking by the *Children of Men* director Alfonso Cuarón. It demands to be seen on the largest screen possible for full-effect so perhaps this will be diminished on home viewings in years to come. Luckily the story is quite strong and compelling to hold up. Still, the experience is certainly profound and a game changer in the realms of sheer edge-of-your-seat entertainment.
+
+<hr>
+
+<p class="extra-large"><img src="{{ site.baseurl }}assets/img/journal/top-5-2013-film-frances-ha.jpg" alt="Frances Ha"></p>
+
+###3. Frances Ha
+
+How you enjoy *Frances Ha* will possibly depend on where you're stationed in life, your age and how open you are to sympathise with people from all walks of life. Some could dismiss the film as ‘middle class white people problems’ or see the main character as self-centred but I just didn’t see it that way due to the winning performance from Greta Gerwig. Her character is struggling and we’ve all been there at one point in our lives. But this fantastic black and white character study is a winner in my books and points out some genuine observations in human interactions with people from different walks of life. 
+
+<hr>
+
+<p class="extra-large"><img src="{{ site.baseurl }}assets/img/journal/top-5-2013-film-the-spectacular-now.jpg" alt="The Spectacular Now"></p>
+
+###4. The Spectacular Now
+
+Out of all the coming-of-age films that got released in 2013, the best was *The Spectacular Now*. Echoes of *Say Anything…* throughout (though perhaps a little less Cameron Crowe-sque) and likable performances from leads Miles Teller and Shailene Woodley give this one the edge over recent films in this genre. Director James Ponsoldt has gone from strength-to-strength too after the rather good *Smashed* released a year earlier.
+
+<hr>
+
+<p class="extra-large"><img src="{{ site.baseurl }}assets/img/journal/top-5-2013-film-django-unchained.jpg" alt="Django Unchained"></p>
+
+###5. Django Unchained
+
+Although released in 2012 in the US, we got this one in 2013 and Tarantino’s latest is his first ‘true’ Western.  Jamie Foxx and particularly Christoph Waltz shine with excellent performances and DiCaprio is the best I’ve seen him in a LONG time (though eager to see him outdo this performance in *The Wolf of Wall St* shortly). Sadly Tarantino cameos with a truly awful Australian accent (the Americans always do a terrible job). Not Tarantino’s finest hour but *Django Unchained* remained constantly compelling and entertaining.
+
+<hr>
+
+##Honourable Mentions
+
+### Life of Pi
+Beautifully realised on screen and powerful to sit through. 3D was effectively utilised too.
+
+### Zero Dark Thirty
+Kathryn Bigelow's intense war film features a great performance from Jessica Chastain but it did overstay its welcome. Possibly the second most intense film of 2013 after *Gravity*.
+
+### Captain Phillips
+Sometimes you can get Tom Hanks fatigue but he's actually rather low-key in yet another strong nail-biter from Paul Greengrass.
+
+### Prisoners
+Hugh Jackman gives his greatest performance in a long time in this tough thriller. I admit, it was very hard to watch in places.
+
+### Silver Linings Playbook
+MUCH better than the unrealistic, over-hyped and frankly silly <em>American Hustle</em>.
+
+### The Kings of Summer
+The second best coming-of-age film of 2013 is almost like a modern-day *Stand by Me* in some regards. Long live Biaggio!
+
+### This is The End
+Seen it twice now and still find it hilarious throughout. The chemistry of the cast is infectious. I wish we had a little more time with the cameos. Possibly the greatest ending to a film ever.
+
+<span class="breaker"></span>
+
+## Biggest Disappointments
+*Only God Forgives* (After *Drive*, all we got was style over substance this time around), *The Bling Ring* (Empty experience and empty characters despite that being the intention), *Kick-Ass 2* (I guess without Matthew Vaughn directing, it sucked all the fun out of what made the original so special), and *Evil Dead* (I was bored more than scared. The original was so innovative at the time and this is anything but).
+
+[Check out some of my reviews new and old on Letterboxd](http://letterboxd.com/hooverdust/).

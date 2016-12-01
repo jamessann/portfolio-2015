@@ -1,0 +1,52 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title:            James Sann
+tagline:          'The portfolio of Melbourne multidisciplinary UI / UX designer James Sann'
+description:      'The portfolio of Melbourne multidisciplinary UI / UX designer James Sann'
+url:              http://www.jamessann.com/
+baseurl:          "/"
+paginate:         6
+paginate_path:    "journal/page/:num"
+
+# Build settings
+markdown:         kramdown
+highlighter:      rouge
+gems:
+   - jekyll-paginate
+   - jekyll-gist
+   - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Permalinks
+
+# Use SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+author:
+  name:           'James Sann'
+  url:            https://twitter.com/james_sann
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/

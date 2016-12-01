@@ -1,0 +1,807 @@
+// ==========================================================================
+// Journal sections
+// ==========================================================================
+
+
+// Journal Summary/Archives page
+// ==================================================
+
+.journal-wrap {
+  padding: 4em 0;
+}
+
+.journal-summary {
+  max-width: 48.125rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 3rem 0;
+  
+  h1 {
+    @include font-size(54);
+    @include line-height(68);
+    font-weight: 800;
+    color: $default-font-color;
+    padding: 0 0 0.2em 0;
+
+    @include mq(iphone) {
+      @include font-size(32);
+      @include line-height(42);
+    }
+
+    @include mq(ipad) {
+      @include font-size(54);
+      @include line-height(68);
+    }
+
+    a {
+      border-bottom: 3px solid #B6C3CB;
+      @include transition (all 0.2s ease-in-out);
+
+      &:hover {
+        color: #E9524A;
+        text-decoration: none;
+        border-bottom: 3px solid #F16363;
+      }
+    }
+  }
+
+  time {
+    color: #667E90;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    @include font-size(14);
+    letter-spacing: 2px;
+    max-width: 60.625rem;
+    margin: 0 auto;
+  }
+
+
+  // &:nth-child(even) {
+  //   margin-left: 1%;
+  // }
+
+}
+
+
+
+// Journal Posts
+// Each post is wrapped in `.post` and is used on the case studies layout.
+// ==================================================
+
+.post {
+  margin-bottom: 4em;
+
+  h1.post-title {
+    text-align: center;
+    font-weight: 800;
+    max-width: 60.625rem;
+    margin: 0 auto;
+    color: $default-font-color;
+
+    @include mq(iphone) {
+      padding: 1rem;
+      @include font-size(32);
+      @include line-height(36);
+    }
+
+    @include mq(ipad) {
+      padding: 2rem 1rem 1.5rem 1rem;
+      @include font-size(64);
+      @include line-height(70);
+    }
+
+  }
+
+  .post-meta-time {
+    color: #667E90;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    @include font-size(14);
+    letter-spacing: 2px;
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, figure, .video-wrapper, ol, ul {
+    max-width: 48.125rem;
+    margin: 0 auto;
+
+    @include mq(iphone) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @include mq(ipad) {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+    }
+
+    @include mq(large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include mq(xlarge) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+
+  /* Code styling */
+
+  pre {
+    max-width: 48.125rem;
+    margin: 0 auto;
+
+    @include mq(iphone) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @include mq(ipad) {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+    }
+
+    @include mq(large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Responsive iframe video */
+
+  .embed-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2em;
+    margin-top: 1em;
+
+    iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  img {
+    padding: 0 0 2em 0;
+  }
+
+  p.extra-large {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  figure {
+      padding-top: 1em;
+      padding-bottom: 2em;
+
+      img {
+        margin: 0 auto;
+        padding-bottom: 1em;
+
+        &:nth-child(odd) {
+          padding-right:0;
+        }
+
+        &:nth-child(even) {
+          padding-left:0;
+        }
+      }
+
+      figcaption {
+        text-align: center;
+        font-style: italic;
+        color: #95A4AE;
+        @include font-size(16);
+        @include line-height(22);
+      }
+    }
+
+  h1 {
+    @include font-size(54);
+    @include line-height(60);
+    font-weight: 800;
+    color: $default-font-color;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+  }
+
+  h2 {
+    color: $default-font-color;
+    font-weight: 800;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    @include mq(iphone) {
+      @include font-size(30);
+      @include line-height(36);
+    }
+
+     @include mq(ipad) {
+      @include font-size(48);
+      @include line-height(54);
+    }
+  }
+
+  h3 {
+    color: $default-font-color;
+    font-weight: 800;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+
+    @include mq(iphone) {
+      @include font-size(26);
+      @include line-height(32);
+    }
+
+     @include mq(ipad) {
+      @include font-size(42);
+      @include line-height(48);
+    }
+  }
+
+  h4 {
+    color: $default-font-color;
+    font-weight: 800;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+
+    @include mq(iphone) {
+      @include font-size(24);
+      @include line-height(30);
+    }
+
+     @include mq(ipad) {
+      @include font-size(36);
+      @include line-height(42);
+    }
+  }
+
+  h5 {
+    color: $default-font-color;
+    font-weight: 800;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+
+    @include mq(iphone) {
+      @include font-size(20);
+      @include line-height(30);
+    }
+
+     @include mq(ipad) {
+      @include font-size(32);
+      @include line-height(36);
+    }
+  }
+
+  h6 {
+    font-weight: 800;
+    color: $default-font-color;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+
+    @include mq(iphone) {
+      @include font-size(18);
+      @include line-height(24);
+    }
+
+     @include mq(ipad) {
+      @include font-size(24);
+      @include line-height(32);
+    }
+
+  }
+
+  p {
+    color: $default-paragraph-color;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+
+
+    @include mq(iphone) {
+      @include font-size(16);
+      @include line-height(24);
+    }
+
+     @include mq(ipad) {
+      @include font-size(20);
+      @include line-height(30);
+    }
+
+  }
+
+  ul {
+    color: $default-paragraph-color;
+    list-style-position: inside;
+
+    @include mq(iphone) {
+      @include font-size(16);
+      @include line-height(24);
+    }
+
+     @include mq(ipad) {
+      @include font-size(20);
+      @include line-height(30);
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+  }
+
+  a {
+    color: #F16363;
+    border-bottom: 1px solid #B6C3CB;
+    @include transition (all 0.2s ease-in-out);
+
+    &:hover {
+      color: #E9524A;
+      text-decoration: none;
+      border-bottom: 1px solid #F16363;
+    }
+  }
+
+  hr {
+    position: relative;
+    border: 0;
+    height: 1px;
+    background-color: #e4e9ed;
+    margin: 2.5rem 1rem;
+    }
+
+  hr:after {
+    content: '';
+    position: absolute;
+    width: 15%;
+    left: 42%;
+    top: 0px;
+    border-top: 1px solid #CFD4D7;
+  }
+
+  blockquote {
+    background-color: #fff;
+    max-width: 64.375rem; /* 1030/16 = 64.375rem */
+    margin: 0 auto;
+    border-left: 0;
+
+    @include mq(iphone) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @include mq(ipad) {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+    }
+
+    @include mq(large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include mq(xlarge) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    p {
+      @include font-size(32);
+      @include line-height(46);
+      font-weight: 800;
+      font-style: normal;
+      max-width: 57.125rem; /* 914/16 = 57.125 */
+      padding: 1.5em 0;
+
+      @include mq(iphone) {
+        @include font-size(20);
+        @include line-height(28);
+      }
+
+       @include mq(ipad) {
+        @include font-size(32);
+        @include line-height(46);
+      }
+    }
+  }
+
+  blockquote:after {
+    content: '';
+    display: block;
+    margin: 1.5em 0;
+  }
+
+  .post-date {
+    display: block;
+    color: #667E90;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+
+// Pagination - Bumpers
+// ==================================================
+
+.post-pagination-bumper {
+  position: fixed;
+  top: 35%;
+  z-index: 12;
+  height: 12em;
+  width: 4em;
+  @include transition (all 0.2s ease-in-out);
+
+  @include mq(iphone) {
+    display: none;
+  }
+
+  @include mq(ipad) {
+    display: block;
+  }
+
+  .svg-icon-nav-left, .svg-icon-nav-right {
+    fill: #B6C3CB;
+    width: 1.75em; /* 28px/16 = 1.75em */
+    height: 2.75em; /* 44px/16 = 2.75em */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transition (all 0.2s ease-in-out);
+  }
+
+  .svg-icon-nav-left {
+    @include mq(ipad) {
+      margin-left: -1em;
+      margin-top: -1.0625em;
+    }
+
+    @include mq(large) {
+      margin-left: -.625em;
+      margin-top: -1.0625em;
+    }
+  }
+
+  .svg-icon-nav-right {
+    @include mq(ipad) {
+      margin-left: -0.5em;
+      margin-top: -1.0625em;
+    }
+
+    @include mq(large) {
+      margin-left: -.625em;
+      margin-top: -1.0625em;
+    }
+  }
+
+  &:hover {
+
+    .svg-icon-nav-left, .svg-icon-nav-right {
+      fill: $default-button-color;
+      cursor: pointer;
+    }
+  } 
+
+}
+
+.post-pagination-bumper-previous {
+  left: 0;
+}
+
+.post-pagination-bumper-next {
+  right: 0;
+}
+
+
+// Pagination - Links at Bottom
+// ==================================================
+
+// Journal Archive pagination
+.page-navigation {
+  max-width: 48.125rem;
+  margin: 0 auto;
+
+ @include mq(iphone) {
+  padding-left: 0;
+  padding-right: 0;
+ }
+
+ @include mq(ipad) {
+  padding-left: 2rem;
+  padding-right: 2rem;
+ }
+
+ @include mq(large) {
+  padding-left: 0;
+  padding-right: 0;
+ }
+}
+
+// Single Article pagination
+
+.post-navigation {
+  max-width: 48.125rem;
+  margin: 0 auto;
+
+ @include mq(ipad) {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+ }
+
+ @include mq(large) {
+  padding-left: 0;
+  padding-right: 0;
+ }
+}
+
+.post-pagination-link {
+  display: inline-block;
+  padding: 1em 2em;
+  border: 0;
+  color: #fff;
+  background-color: #B6C3CB;
+  @include transition (all 0.2s ease-in-out);
+  @include border-radius (3px);
+  @include font-size(16);
+  @include line-height(16);
+
+  &:hover {
+    background-color: $default-button-color;
+    cursor: pointer;
+  }
+}
+
+.post-pagination-link-previous {
+  float: left;
+}
+
+.post-pagination-link-next {
+  float: right;
+}
+
+// Pagination - Page x of x
+// ==================================================
+
+.post-pagination-page {
+  position: relative;
+  top: 2.1em;
+  text-align: center;
+  color: #8A9499;
+  display: block;
+  width: 7em;
+  margin: 0 auto;
+  padding: 0;
+
+  @include mq(iphone) {
+    display: none;
+  }
+
+  @include mq(small) {
+    display: block;
+  }
+
+}
+
+
+// Related posts
+// Meta data line below post title
+// ==================================================
+
+.post-footer {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  border-top: 1px solid #C8D0D9;
+  margin-top: 3em;
+
+  @include mq(ipad) {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  @include mq(large) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 4em;
+    margin-top: 4em;
+  }
+
+  .col-6 {
+    @include mq(iphone) {
+      width: 100%;
+      margin-bottom: 3em;
+      padding-bottom: 3em;
+
+      &:first-child {
+        border-bottom: 1px solid #C8D0D9;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    @include mq(large) {
+      width: 50%; // Fallback if calc() is not supported
+      width: calc(100% / 12 * 6);
+      width: -webkit-calc(100% / 12 * 6);
+      width: -moz-calc(100% / 12 * 6);
+      margin-bottom: 0;
+      padding-bottom: 2em;
+
+      &:first-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  h3 {
+    font-weight: 800;
+  }
+
+  .post-related {
+    
+    @include mq(iphone) {
+      padding-right: 0;
+    }
+
+    @include mq(large) {
+      padding-right: 2.5%;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      padding: 0 0 0.5em 0;
+      list-style: none;
+    }
+
+    h4 {
+       @include font-size(20);
+       @include line-height(30);
+    }
+
+    a {
+      border-bottom: 2px solid #B6C3CB;
+      @include transition (all 0.2s ease-in-out);
+
+      &:hover {
+        color: #E9524A;
+        text-decoration: none;
+        border-bottom: 2px solid #F16363;
+      }
+    }
+  }
+
+  .post-author {
+
+    @include mq(iphone) {
+      padding-left: 0;
+    }
+
+    @include mq(large) {
+      padding-left: 1.5%;
+    }
+
+    .author-me {
+      width: 7em; 
+      border-radius: 3.5em;
+      box-shadow: 0 0 0 1px #eee,0 0 0 4px #fff,0 0 0 5px #CFD4D7;
+      
+      @include mq(iphone) {
+        float: none;
+        margin: 0 auto;
+      }
+
+      @include mq(medium) {
+        float: left;
+        margin-right: 1.5em;
+      }
+    }
+
+    .post-author-about {
+      @include font-size(16);
+      @include line-height(24);
+      overflow: hidden;
+      
+      h3 {
+        @include mq(iphone) {
+          text-align: center;
+          margin: 0.25em 0 0.75em 0;
+        }
+
+        @include mq(medium) {
+          text-align: left;
+        }
+      }
+
+      p {
+        margin-bottom: 0.8em;
+      }
+
+      a {
+        color: #F16363;
+        border-bottom: 1px solid #B6C3CB;
+        @include transition (all 0.2s ease-in-out);
+
+        &:hover {
+          color: #E9524A;
+          text-decoration: none;
+          border-bottom: 1px solid #F16363;
+        }
+      }
+    }
+
+  } /* Close .post-author */
+} /* Close .related */
+
+
+
+
+// /*
+//  * Pagination
+//  *
+//  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+//  * there are no more previous or next posts to show.
+//  */
+
+// .pagination {
+//   overflow: hidden; /* clearfix */
+//   margin-left: -1rem;
+//   margin-right: -1rem;
+//   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+//   color: #ccc;
+//   text-align: center;
+// }
+
+// /* Pagination items can be `span`s or `a`s */
+// .pagination-item {
+//   display: block;
+//   padding: 1rem;
+//   border: 1px solid #eee;
+// }
+// .pagination-item:first-child {
+//   margin-bottom: -1px;
+// }
+
+// /* Only provide a hover state for linked pagination items */
+// a.pagination-item:hover {
+//   background-color: #f5f5f5;
+// }
+
+// @media (min-width: 30rem) {
+//   .pagination {
+//     margin: 3rem 0;
+//   }
+//   .pagination-item {
+//     float: left;
+//     width: 50%;
+//   }
+//   .pagination-item:first-child {
+//     margin-bottom: 0;
+//     border-top-left-radius:    4px;
+//     border-bottom-left-radius: 4px;
+//   }
+//   .pagination-item:last-child {
+//     margin-left: -1px;
+//     border-top-right-radius:    4px;
+//     border-bottom-right-radius: 4px;
+//   }
+// }

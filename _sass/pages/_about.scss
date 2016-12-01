@@ -1,0 +1,746 @@
+// ==========================================================================
+// About page
+// ==========================================================================
+
+.about {
+  padding: 0;
+
+  img {
+    margin-bottom: 3em;
+  }
+}
+
+.about-wrap {
+
+  .biography {
+    padding-right: 8.33333%;
+
+    @include mq(large,max) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    h1 {
+      font-weight: 800;
+      
+      @include mq(iphone) {
+        @include font-size(28);
+        @include line-height(38);
+        margin: 1em 0 2em 0;
+      }
+
+      @include mq(ipad) {
+        @include font-size(48);
+        @include line-height(68);
+         margin: 0.5em 0 1.5em 0;
+      }
+
+      @include mq(large) {
+        @include font-size(32);
+        @include line-height(44);
+         margin: 1em 0 2em 0;
+      }
+
+      a {
+        color: #F16363;
+        border-bottom: 2px solid #B6C3CB;
+        @include transition (all 0.2s ease-in-out);
+
+        &:hover {
+          color: #E9524A;
+          text-decoration: none;
+          border-bottom: 2px solid #F16363;
+        }
+      }
+
+    }
+
+    h2 {
+      @include font-size(24);
+      @include line-height(30);
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+
+    a {
+      color: #F16363;
+      border-bottom: 1px solid #B6C3CB;
+      @include transition (all 0.2s ease-in-out);
+
+      &:hover {
+        color: #E9524A;
+        text-decoration: none;
+        border-bottom: 1px solid #F16363;
+      }
+    }
+
+    p {
+      color: $default-paragraph-color;
+
+      @include mq(iphone) {
+        @include font-size(16);
+        @include line-height(24);
+      }
+
+      @include mq(ipad) {
+        @include font-size(20);
+        @include line-height(30);
+      }
+
+    }
+
+    figure.live-music-shots {
+      padding: 1em 0 2em 0;
+
+
+      img {
+        
+        @include mq(iphone) {
+          width: 100%;
+          margin-bottom: 5%;
+        }
+
+        @include mq(medium) {
+          margin-bottom: 3%;
+          width: 50%;
+        }
+
+        &:nth-child(odd) {
+          
+          @include mq(iphone) {
+            padding-right:0;
+          }
+
+          @include mq(medium) {
+            padding-right:1.5%;
+          }
+
+        }
+
+        &:nth-child(even) {
+
+          @include mq(iphone) {
+            padding-left:0;
+          }
+
+          @include mq(medium) {
+            padding-left:1.5%;
+          }
+
+        }
+      }
+
+      figcaption {
+        text-align: center;
+        color: #95A4AE;
+        @include font-size(16);
+        @include line-height(22);
+      }
+    }
+
+    hr {
+      position: relative;
+      border: 0;
+      height: 1px;
+      background-color: #e4e9ed;
+      margin: 2.5rem 0;
+    }
+
+    hr:after {
+        content: '';
+        position: absolute;
+        width: 15%;
+        left: 41%;
+        top: 0px;
+        border-top: 1px solid #CFD4D7;
+    }
+
+  } /* Close .biography */
+
+  /* Timeline */
+
+  .timeline-wrap {
+    padding-top: 2em;
+
+    @include mq(large,max) {
+      width: 100%;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+
+    .author-me {
+      width: 11.563em; 
+      border-radius: 5.7815em;
+      box-shadow: 0 0 0 1px #eee,0 0 0 4px #fff,0 0 0 5px #CFD4D7;
+    }
+
+    .timeline-vert {
+      position: relative;
+      padding: 2em 0 0 0;
+      margin-top: 0em;
+      margin-bottom: 2em;
+
+      &:before {
+        /* this is the vertical line */
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        height: 98%;
+        width: 2px;
+        background: #CFD4D7;
+      }
+    }
+
+    .timeline-block {
+      position: relative;
+      margin: 4em 0 2em 0;
+
+      .timeline-circle {
+        position: absolute;
+        top: -2px;
+        left: 48.5%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #CFD4D7;
+        box-shadow: 0 0 0 2px #FFF;
+        @include transition (background-color 0.3s ease-in-out);
+
+        @include mq(iphone) {
+          left: 47.7%;
+        } 
+
+        @include mq(small) {
+           left: 48.8%;
+        }
+
+        @include mq(ipad) {
+           left: 49.1%;
+        }
+
+        @include mq(large) {
+           left: 48.5%;
+        }
+
+      }
+
+      .timeline-date-right {
+        position: absolute;
+        top: 0;
+        left: 55%;
+        color: #687E90;
+        font-weight: 600;
+
+        @include mq(iphone) {
+          top: -3px;
+          left: 57%;
+          @include font-size(15);
+        }
+
+        @include mq(small) {
+          left: 54%;
+        }
+
+        @include mq(ipad) {
+          left: 53%;
+        }
+
+        @include mq(large) {
+          top: -3px;
+          left: 55%;
+          @include font-size(18);
+        }
+
+      }
+
+      .timeline-date-left {
+        position: absolute;
+        top: 0;
+        right: 55%;
+        color: #687E90;
+        @include font-size(18);
+        font-weight: 600;
+
+        @include mq(iphone) {
+          top: -3px;
+          right: 55%;
+          @include font-size(15);
+        }
+
+        @include mq(small) {
+         right: 54%;
+        }
+
+        @include mq(ipad) {
+          right: 53%;
+        }
+
+        @include mq(large) {
+          top: -4px;
+          right: 55%;
+          @include font-size(18);
+        }
+
+      }
+
+      .timeline-card {
+          position: relative;
+          background: #fff;
+          border-radius: 0.25em;
+          padding: 1.5em;
+          margin-top: 2em;
+          box-shadow: 0 2px 0 #CFD4D7;
+          text-align: center;
+
+          @include mq(iphone) {
+            width: 100%;
+            margin: 0 auto;
+          }
+
+          @include mq(ipad) {
+            width: 70%;
+            margin: 0 auto;
+          }
+
+          @include mq(large) {
+            width: 100%;
+            margin-top: 2em;
+          }
+
+          h2 {
+            @include font-size(18);
+            @include line-height(20);
+            text-transform: uppercase;
+          }
+
+          p {
+            margin: 0;
+            color: #677E90;
+            @include font-size(16);
+            @include line-height(22);
+          }
+       
+      &:nth-child(even) {
+          margin-top: 1em;
+      }
+
+      } /* Close .timeline-card */
+
+    &:before {
+        @include mq(large,max) {
+          margin-bottom: 2em;
+        }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .timeline-circle {
+        background-color: $default-button-color;
+      }
+    }
+
+    } /* Close .timeline-block */
+
+  } /* Close .timeline-wrap */
+
+
+  .contact-card {
+    margin-top: 4em;
+
+    .timeline-card {
+      position: relative;
+      background: #fff;
+      border-radius: 0.25em;
+      padding: 2em 1.5em;
+      box-shadow: 0 2px 0 #CFD4D7;
+      text-align: center;
+
+      @include mq(iphone) {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @include mq(ipad) {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      @include mq(large) {
+        width: 100%;
+        margin-top: 1em;
+      }
+    }
+
+    a {
+     
+      svg {
+        float: left;
+        margin-right: 15px;   
+        width: 32px; /* 28px/16 = 1.75em */
+        height: 28px; /* 44px/16 = 2.75em */
+
+        .icon-twitter, .icon-linkedin, .icon-dribbble, .icon-letterboxd {
+          fill: #546573;
+          @include transition (all 0.2s ease-in-out);
+        }
+      }
+
+      &:hover {
+        .icon-twitter, .icon-linkedin, .icon-dribbble, .icon-letterboxd {
+          fill: #F16363;
+        }
+      }
+    } /* Close a */ 
+
+    .contact-info {
+      @include font-size(24);
+      @include line-height(32);
+      font-weight: 700;
+      @include transition (all 0.2s ease-in-out);
+      color: #F16363;
+      border-bottom: 2px solid #B6C3CB;
+
+      @include mq(iphone) {
+        @include font-size(20);
+        @include line-height(38);
+      }
+
+      @include mq(small) {
+        @include font-size(24);
+        @include line-height(32);
+      }
+
+      &:hover {
+        color: #E9524A;
+        text-decoration: none;
+        border-bottom: 2px solid #F16363;
+      }
+    }
+
+  } /* Close .contact-card */
+
+} /* Close .about-wrap */
+
+
+
+.about-philosophy {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  color: #fff;
+  margin-top: 3em;
+  background-image:url(/assets/img/about/about-philosophy-2000px.jpg);
+  background-size:cover;
+  background-position:top;
+
+  @include mq(large, max) {
+    background: rgba(83, 100, 114, 1);
+    height: 100%;
+    padding-bottom: 3em;
+  }
+
+  // @include mq(ipad) {
+  //   background-image:url(/assets/img/about/about-philosophy-2000px.jpg);
+  //   background-size:cover;
+  //   background-position:top;
+  //   position: relative;
+  // }
+
+  .about-overlay {
+    
+    @include mq(iphone) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(61, 78, 90, 1);
+      background-image: url(/assets/img/about/tile-pattern.png);
+      background-repeat: repeat;
+      z-index: 1;
+      opacity: 0.2;
+    }
+
+    @include mq(large) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(83, 100, 114, 0.8);
+      background-image: none;
+      background-repeat: repeat;
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+
+  .philosophy-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    @include mq(large, max) {
+      position: relative;
+    }
+
+    .container {
+      padding-top:5em;
+    }
+  }
+
+  h2 {
+      @include font-size(24);
+      @include line-height(30);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1em;
+    }
+
+  a {
+    color: #fff;
+    border-bottom: 1px solid #B6C3CB;
+    @include transition (all 0.2s ease-in-out);
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #F16363;
+    }
+  }
+
+  p {
+   @include mq(iphone) {
+      @include font-size(16);
+      @include line-height(24);
+    }
+
+    @include mq(ipad) {
+      @include font-size(20);
+      @include line-height(30);
+    }
+  }
+
+
+  .philosophy {
+    padding-right: 8.33333%;
+
+    @include mq(large,max) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .tools {
+
+    @include mq(iphone) {
+      width: 100%;
+      margin-top: 2em;
+    }
+
+    @include mq(large) {
+      width: 33.33333%; // Fallback if calc() is not supported
+      width: calc(100% / 12 * 4);
+      width: -webkit-calc(100% / 12 * 4);
+      width: -moz-calc(100% / 12 * 4);
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type:none;
+     @include mq(iphone) {
+        @include font-size(16);
+        @include line-height(24);
+      }
+
+      @include mq(ipad) {
+        @include font-size(18);
+        @include line-height(26);
+      }
+
+  }
+
+}
+
+
+.just-for-fun-container {
+  max-width: $desktop-container;
+  margin: 0 auto;
+  padding:0;
+}
+
+.just-for-fun {
+
+  h2 {
+    text-align: center;
+    margin: 5rem 0;
+
+    @include mq(iphone) {
+        @include font-size(32);
+        @include line-height(36);
+      }
+  }
+
+  .cinema-wrap, .tv-wrap, .music-wrap, .personal-wrap, .web-wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 370px;
+    background-size:cover;
+    background-position:top;
+
+    @include mq(large,max) {
+      width: 100%;
+    }
+
+
+
+    &:hover {
+      cursor: default;
+
+      .overlay-cinema {
+        background: rgba(83, 100, 114, 0.9);
+      }
+
+      .overlay-tv {
+        background: rgba(241, 99, 99, 0.9);
+      }
+
+      .overlay-music {
+        background: rgba(19, 165, 150, 0.9);
+      }
+
+     .overlay-personal {
+        background: rgba(241, 212, 64, 0.9);
+      }
+
+      .overlay-web {
+          background: rgba(83, 100, 114, 0.9);
+      }
+    }
+
+  }
+
+  .cinema-wrap {
+    background-image:url(/assets/img/about/about-film-640px.jpg);
+  }
+
+  .tv-wrap {
+    background-image:url(/assets/img/about/about-tv-640px.jpg);
+  }
+
+  .music-wrap {
+    background-image:url(/assets/img/about/about-music-640px.jpg);
+  }
+
+  .personal-wrap {
+    background-image:url(/assets/img/about/about-lyns-oscar-640px.jpg);
+  }
+
+  .web-wrap {
+    background-image:url(/assets/img/about/about-web-640px.jpg);
+  }
+
+  .overlay-cinema, .overlay-tv, .overlay-music, .overlay-personal, .overlay-web {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include transition (all 0.2s ease-in-out);
+  }
+
+  .overlay-cinema {
+      background: rgba(83, 100, 114, 0.75);
+  }
+
+  .overlay-tv {
+      background: rgba(241, 99, 99, 0.75);
+  }
+
+  .overlay-music {
+      background: rgba(19, 165, 150, 0.75);
+  }
+
+  .overlay-personal {
+      background: rgba(241, 212, 64, 0.75);
+  }
+
+  .overlay-web {
+      background: rgba(83, 100, 114, 0.75);
+  }
+
+  .fun-meta {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    @include transform (translate(-50%, -50%));
+    text-align: center;
+    width: 90%;
+
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      @include font-size(32);
+      @include line-height(42);
+    }
+
+    p {
+      color: #fff;
+      @include font-size(20);
+      @include line-height(26);
+      position: relative;
+      padding: 1rem 0 0 0;
+      margin: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 45%;
+        left: 27%;
+        top: 0px;
+        border-top: 1px solid #fff;
+      }
+    }
+
+    a {
+      color: #fff;
+      border-bottom: 1px solid #B6C3CB;
+      @include transition (all 0.2s ease-in-out);
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #F16363;
+      }
+    }
+  }
+
+  img {
+      margin-bottom: 0;
+  }
+
+}

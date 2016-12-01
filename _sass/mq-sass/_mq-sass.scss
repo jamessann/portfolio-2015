@@ -1,0 +1,100 @@
+// ==================================================
+// Imports
+// ==================================================
+@import "settings.scss";
+@import "functions.scss";
+
+// ==================================================
+// mq Mixin
+// ==================================================
+@mixin mq($breakpoint, $minmax: min) {
+  $media: $mq-media;
+
+  @if ($media == false) {
+    $media: "";
+  }
+  @else {
+    $media: $media + " and ";
+  }
+
+  $value: map-get($mq-breakpoints, $breakpoint);
+
+  @if $value != null {
+    @if $minmax != min and $minmax != max {
+      @warn "The second parameter of `@include mq()` can only accept values `min` or `max`. "
+            + "Falling back to the default, `min`.";
+      $minmax: min;
+    }
+
+    $value: strip-units($value);
+
+    @if $minmax == max {
+      $value: $value - 1;
+    }
+
+    @if ($mq-ems == true) {
+      $value: em($value, $mq-em-base);
+    }
+    @else {
+      $value: $value + px;
+    }
+
+    $media-query: "#{$media} (#{$minmax}-width: #{$value})";
+
+    @media #{$media-query} {
+      @content;
+    }
+  }
+
+  @else {
+    @if (type-of($breakpoint) == string) {
+      @if ($breakpoint == landscape or $breakpoint == portrait) {
+        $media-query: "#{$media} (orientation: #{$breakpoint})";
+
+        @media #{$media-query} {
+          @content;
+        }
+      }
+      @else if ($breakpoint == retina) {
+        $media-query: "#{$media} (-webkit-min-device-pixel-ratio: 2)," +
+                      "#{$media} (min-resolution: 2dppx)";
+
+        @media #{$media-query} {
+          @content;
+        }
+      }
+      @else {
+        @warn "A value for your breakpoint could not be found. "
+            + "Define one in the `$mq-breakpoints` map, enter a custom value, "
+            + "or use a predefined one (e.g. retina, landscape, portrait).";
+      }
+    }
+    @else if (type-of($breakpoint) == number) {
+      @if $minmax != min and $minmax != max {
+        @warn "The second parameter of `@include mq()` can only accept values `min` or `max`. "
+            + "Falling back to the default, `min`.";
+        $minmax: min;
+      }
+
+      $value: strip-units($breakpoint);
+
+      @if ($mq-ems == true) {
+        $value: em($value, $mq-em-base);
+      }
+      @else {
+        $value: $value + px;
+      }
+
+      $media-query: "#{$media} (#{$minmax}-width: #{$value})";
+
+      @media #{$media-query} {
+        @content;
+      }
+    }
+    @else {
+      @warn "A value for your breakpoint could not be found. "
+          + "Define one in the `$mq-breakpoints` map, enter a custom value, "
+          + "or use a predefined one (e.g. retina, landscape, portrait).";
+    }
+  }
+}

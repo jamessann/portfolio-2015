@@ -1,0 +1,51 @@
+---
+layout: journal-listings
+title: Journal
+menu: main
+---
+
+<div class="container">
+
+  <!-- This loops through the paginated posts 
+       Refer to _config.yml for number of posts per page
+  -->
+  {% for post in paginator.posts %}
+  <section class="journal-summary">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p>
+      <time content="{{ post.date | date: "%Y-%m-%d" }}" datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post-meta-time" itemprop="datePublished">{{ post.date | date: "%A, %B %-d, %Y" }}</time>
+    </p>
+    <!-- <section class="post-content">
+      {{ post.excerpt | truncatewords:35 }}
+    </section> -->
+  </section>
+  {% endfor %}
+  
+  <span class="post-pagination-page clear"><span class="post-pagination-page-label">Page&nbsp;</span>{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  <section class="page-navigation container clear">
+    {% if paginator.previous_page %}
+      <a href="/journal/{% if paginator.previous_page > 1 %}{{ paginator.previous_page | prepend: "page/" | append: "/" }}{% endif %}" class="post-pagination-link post-pagination-link-previous">Prev
+      </a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page | prepend: "/journal/page/" | append: "/" }}" class="post-pagination-link post-pagination-link-next">Next
+      </a>
+    {% endif %}
+  </section>
+
+  <section class="page-navigation col col-12">
+    {% if paginator.previous_page %}
+      <a href="/journal/{% if paginator.previous_page > 1 %}{{ paginator.previous_page | prepend: "page/" | append: "/" }}{% endif %}" class="post-pagination-bumper post-pagination-bumper-previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 448" class="svg-icon-nav-left"><path d="M292.75 75.25l-132.75 132.75 132.75 132.75q4.75 4.75 4.75 11.25t-4.75 11.25l-41.5 41.5q-4.75 4.75-11.25 4.75t-11.25-4.75l-185.5-185.5q-4.75-4.75-4.75-11.25t4.75-11.25l185.5-185.5q4.75-4.75 11.25-4.75t11.25 4.75l41.5 41.5q4.75 4.75 4.75 11.25t-4.75 11.25z"/></svg>
+      </a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page | prepend: "/journal/page/" | append: "/" }}" class="post-pagination-bumper post-pagination-bumper-next">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 448" class="svg-icon-nav-right"><path d="M276.75 219.25l-185.5 185.5q-4.75 4.75-11.25 4.75t-11.25-4.75l-41.5-41.5q-4.75-4.75-4.75-11.25t4.75-11.25l132.75-132.75-132.75-132.75q-4.75-4.75-4.75-11.25t4.75-11.25l41.5-41.5q4.75-4.75 11.25-4.75t11.25 4.75l185.5 185.5q4.75 4.75 4.75 11.25t-4.75 11.25z"/></svg>
+      </a>
+    {% endif %}
+  </section>
+      
+</div> <!-- Close .container -->
