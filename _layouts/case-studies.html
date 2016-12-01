@@ -56,9 +56,9 @@
 
           <li class="label">Sections</li>
 
-          <li><a href="/case-studies/" class="{% if page.url contains "/case-studies/" %}active{% endif %}">Case Studies</a></li>
-          <li><a href="/journal/" class="{% if page.url contains "/journal/" %}active{% endif %}">Journal</a></li>
-          <li><a href="/about/" class="{% if page.url contains "/about/" %}active{% endif %}">About</a></li>
+          <li><a href="{{ site.baseurl }}case-studies/" class="{% if page.url contains "/case-studies/" %}active{% endif %}">Case Studies</a></li>
+          <li><a href="{{ site.baseurl }}journal/" class="{% if page.url contains "/journal/" %}active{% endif %}">Journal</a></li>
+          <li><a href="{{ site.baseurl }}about/" class="{% if page.url contains "/about/" %}active{% endif %}">About</a></li>
 
           <li class="label">Work with me</li>
 
