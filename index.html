@@ -145,7 +145,7 @@ menu: main
     <li class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">
       <div class="grid-posts col col-12">
       {% for post in site.posts limit:1 %}
-        <a href="{{ post.url }}" class="post col col-12">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="post col col-12">
           <div class="post-wrap">
             <div class="post-inner">
               <span class="post-date">Latest Journal &mdash; {{ post.date | date: "%d-%m-%Y" }}</span>
