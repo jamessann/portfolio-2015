@@ -22,7 +22,7 @@ baseurl:          "/portfolio-2015"
 paginate:         6
 paginate_path:    "journal/page/:num"
 
-production_url : http://jamessann.github.io.com/portfolio-2015
+#production_url : http://jamessann.github.io/portfolio-2015
 #BASE_PATH : http://<username>.com/blog
 
 # Build settings
